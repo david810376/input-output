@@ -64,7 +64,7 @@ void Deposit(char CustName[], PERSON *a, int N)
 		cout << "Now your new balance is " << a[name].Balance << endl;
 	}
 }
-void newone(string fname, PERSON *a, int N)
+void NewCopy(string fname, PERSON *a, int N)
 {
 	ofstream outfile;
 	outfile<< setprecision(2) << fixed;
@@ -110,7 +110,7 @@ int main()
 	Display(a, N);
 	FindRichest(a, N);
 	Deposit(CustName, a, N);
-	newone("data.txt", a, N);
+	NewCopy("data.txt", a, N);
 	system("PAUSE");
 }
 /*
