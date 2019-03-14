@@ -92,11 +92,9 @@ int main()
 		return 0;
 	}
 
-	while (!file.eof()) //while it end of the file than jump out the while, use eof because we do not know how long is the file
-	{
-		getline(file, line);//count how many line in the file
-		N++;
-	}
+  	while (getline(file, line)){//count how many line in the file
+        N++;
+    }
 	file.clear();
 	file.seekg(0, ios::beg); // seek to 0 characters from the beginning of the file
 
